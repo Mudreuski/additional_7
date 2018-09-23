@@ -19,7 +19,7 @@ module.exports = function solveSudoku(matrix) {
     };
 
     for (let i = 0; i < 9; i++) {
-      cache.push( [ matrix[line][i], matrix[i][col], matrix[square.line + i % 3][square.col + Math.floor(i / 3)] ] )
+      cache.push( [ matrix[line][i], matrix[i][col], matrix[square.line + i % 3][square.col + Math.floor(i / 3)] ] );
     }
 
     return cache;
